@@ -13,6 +13,6 @@ const SERVE_AMPLIFY = {};
 const config = isProd ? SERVE_AMPLIFY : SERVE_NETLIFY;
 
 // https://astro.build/config
-export default defineConfig(config);
+export default defineConfig(SERVE_AMPLIFY);
 
-console.log(config);
+console.log(SERVE_AMPLIFY);
