@@ -1,0 +1,105 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<div class="splash">
+  <div class="logo">
+    <Logo />
+  </div>
+
+  <div class="message">
+    <p>
+      <strong>Hold onto your hats!</strong> We're in the middle of a digital makeover
+      to give you a browsing experience so good, it'll make unicorns jealous. While
+      we're busy sprinkling some internet magic, please bear with us. Thanks a bunch
+      for your patience!
+    </p>
+  </div>
+
+  <p class="m0">Shoot us an email at :</p>
+  <a href="mailto:hello@246pixels.com" class="cta-btn" aria-label="button"
+    >hello@246pixels.com
+
+    <svg
+      width="46"
+      height="46"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      ><path d="M1.5 4.5 12 12l10.5-7.5h-21Zm0 15h21v-15h-21v15Z"></path></svg
+    >
+  </a>
+
+  <img src="splash.svg" alt="Hello!" class="hello" />
+</div>
+
+<style lang="scss">
+  .hello {
+    width: 100%;
+    max-width: 90px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: -1;
+	@media (min-width:768px) {
+		max-width: 200px;
+	}
+  }
+  .m0 {
+    margin: 0;
+  }
+  .splash {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    align-items: center;
+    @media (min-width: 768px) {
+      align-items: flex-start;
+      gap: 2.5rem;
+    }
+  }
+  .logo {
+    width: 100%;
+    max-width: 200px;
+  }
+  .message {
+    p {
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-align: justify;
+      @media (min-width: 768px) {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  .cta-btn {
+    margin-top: -20px;
+    padding: 1rem;
+    background-color: rgba(var(--indigo), 1);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 224px;
+    font-size: 1.1rem;
+    padding: 0.5rem 2.2rem;
+    box-shadow: 3px 3px 0px var(--green);
+    width: 100%;
+    transition: 200ms;
+    &:hover {
+      box-shadow: none;
+      background-color: rgba(var(--indigo), 0.9);
+    }
+    > svg {
+      width: 22px;
+    }
+  }
+</style>

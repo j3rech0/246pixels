@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "246pixels",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.3.2",
     "@astrojs/netlify": "^4.1.0",
     "astro": "^4.0.4",
+    "sass": "^1.71.1",
     "typescript": "^5.3.3"
   }
 }
